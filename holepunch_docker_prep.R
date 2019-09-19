@@ -1,12 +1,12 @@
-#uncomment next line if you need to install hole punch package
-#install.packages("remotes")
-#remotes::install_github("karthik/holepunch")
+# uncomment next line if you need to install hole punch package
+# install.packages("remotes")
+remotes::install_github("karthik/holepunch",force=T)
 library(holepunch)
-write_compendium_description(package = "Your compendium name", 
-                             description = "Your compendium description")
+write_compendium_description(package = "Testproject", 
+                             description = "Noemi")
 # to write a description, with dependencies. Be sure to fill in placeholder text
 
-write_dockerfile(maintainer = "your_name") 
+write_dockerfile(maintainer = "Noemi") 
 # To write a Dockerfile. It will automatically pick the date of the last 
 # modified file, match it to that version of R and add it here. You can 
 # override this by passing r_date to some arbitrary date
